@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hunt Pricelist</title>
+</head>
+<body>
+    <div> <h2>Цены на трофеи в охотхозяйствах-партнерах на сезон 2020-2021.</h2></div>
+        <div>
+            <table>
+                <caption>Цены на трофеи в охотхозяйствах-партнерах на сезон 2020-2021</caption>
+                    <thead>
+                        <tr>
+                            <th>Наименование охотхозяйства</th> <th>Лось</th> <th>Кабан</th> <th>Косуля</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Глухомань</td> <td>50</td> <td>25</td> <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Берендей</td> <td>55</td> <td>20</td> <td>13</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4" style="font-size: 15px; height: 30px;">Информация по состоянию на 22.11.2020</th>
+                        </tr>
+                    </tfoot>
+            </table>    
+        </div>
+    <div>
+        <h3>Добавьте информацию по Вашему охотхозяйству</h3>
+        <form method="post" action="create.php">
+            <fieldset>
+                <legend>Введите данные:</legend>
+                <label for="lodge_name">Наименование охотхозяйства</label>
+                <input type=text name="lodge_name" autofocus id="lodge_name"/><br>
+                <label for="moose">Лось</label><br>
+                <input type=text name="moose" id="moose"/><br>
+                <label for="boar">Кабан</label><br>
+                <input type="text" name="boar" id="boar"><br>
+                <label for="roedeer">Косуля</label><br>
+                <input type="text" name="roedeer" id="roedeer"/><br>
+                <input type="submit" value="Добавить">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
